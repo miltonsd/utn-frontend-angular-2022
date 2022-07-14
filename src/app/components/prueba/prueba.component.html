@@ -6,4 +6,36 @@
   <label for="name">Hero name: {{ name }}</label>
   <br />
   <input id="name" [(ngModel)]="name" placeholder="name" />
+  <button appCustomDirective>enviar</button>
+
+  <button class="btn btn-primary">button</button>
+
+  <!-- Ejemplos directivas estructurales de angular -->
+  <button *ngIf="show">send</button>
+  <ng-container *ngIf="show">
+    div 1
+    <ng-container *ngIf="show">div 2</ng-container>
+  </ng-container>
+  <ul>
+    <li
+      *ngFor="
+        let item of [1, 2, 3, 4, 5, 6, 7, 8, 9];
+        let indice = index;
+        let primero = first;
+        let ultima = last
+      "
+    >
+      Item {{ item }} {{ indice }} {{ primero }} {{ ultima }}
+    </li>
+  </ul>
+
+  <div [ngSwitch]="color">
+    <div *ngSwitchCase="'red'">red</div>
+    <div *ngSwitchDefault>default</div>
+  </div>
+
+  <button [ngClass]="{ 'otra-clase': 1 < 2 }">enviar</button>
+  <button [class.active]="show">enviar</button>
+  <button [ngStyle]="{ color: color }">enviar</button>
+  <button [style.color]="color">enviar</button>
 </div>

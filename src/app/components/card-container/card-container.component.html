@@ -1,0 +1,5 @@
+<article class="cards">
+  <ng-container *ngFor="let hero of heroes">
+    <app-card (removeChild)="removeChild($event)" [hero]="hero"></app-card>
+  </ng-container>
+</article>
