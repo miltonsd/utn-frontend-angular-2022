@@ -9,16 +9,16 @@ import { Theme, NavItem } from '../../interfaces/navbar';
 export class NavbarComponent {
   navItems: NavItem[] = [
     {
-      label: 'Home',
-      url: '/',
+      label: 'Cards',
+      path: '/cards',
     },
     {
       label: 'Features',
-      url: '/features',
+      path: '/features',
     },
     {
       label: 'Pricing',
-      url: '/pricing',
+      path: '/pricing',
     },
   ];
 

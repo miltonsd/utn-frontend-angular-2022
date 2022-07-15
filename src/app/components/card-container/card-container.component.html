@@ -1,3 +1,7 @@
+<router-outlet></router-outlet>
+<button class="btn btn-primary" (click)="addHero()">add hero</button>
+<button class="btn btn-danger" (click)="stopSubscription()">stop</button>
+
 <article class="cards">
   <ng-container *ngFor="let hero of heroes">
     <app-card (removeChild)="removeChild($event)" [hero]="hero"></app-card>
