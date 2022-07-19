@@ -20,6 +20,10 @@ export class NavbarComponent {
       label: 'Pricing',
       path: '/pricing',
     },
+    {
+      label: 'Characters',
+      path: '/characters',
+    },
   ];
 
   theme: Theme = 'light';

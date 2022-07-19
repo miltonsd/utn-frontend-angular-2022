@@ -1,0 +1,7 @@
+<ng-container *ngIf="charactersResponse">
+  <article class="cards">
+    <ng-container *ngFor="let character of charactersResponse.characters">
+      <app-character [character]="character"></app-character>
+    </ng-container>
+  </article>
+</ng-container>

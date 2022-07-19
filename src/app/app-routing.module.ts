@@ -3,6 +3,7 @@ import { RouterModule, Routes, Route } from '@angular/router';
 // Components
 import { CardContainerComponent } from './components/card-container/card-container.component';
 import { CardDetailsComponent } from './components/card-details/card-details.component';
+import { CharactersComponent } from './components/characters/characters.component';
 // import { FeaturesComponent } from './components/features/features.component';
 import { HomeFeatComponent } from './components/home-feat/home-feat.component';
 import { HomePriComponent } from './components/home-pri/home-pri.component';
@@ -39,6 +40,10 @@ const routes: Routes = [
       import('./modules/features/features.module').then(
         (m) => m.FeaturesModule
       ),
+  },
+  {
+    path: 'characters',
+    component: CharactersComponent,
   },
   {
     path: 'pricing',

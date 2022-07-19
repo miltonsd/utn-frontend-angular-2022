@@ -1,5 +1,10 @@
-<p>Card selected {{ hero.id }}</p>
+<ng-container *ngIf="hero">
+  <p>Card selected {{ hero.id }}</p>
 
-<div class="card">
-  <app-card [hero]="hero"></app-card>
-</div>
+  <div class="card">
+    <app-card [hero]="hero"></app-card>
+  </div>
+
+  <button class="btn btn-danger" (click)="stopSubscription()">stop</button>
+  <br />
+</ng-container>
